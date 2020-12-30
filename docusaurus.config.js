@@ -1,19 +1,19 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'InterLink inCamp',
+  tagline: 'Web Development Internship',
+  url: 'https://interlink-incamp.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'interlink', // Usually your GitHub org/user name.
+  projectName: 'inCamp', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'InterLink inCamp',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'InterLink Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -24,7 +24,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/alexanderko/interlink-incamp',
           label: 'GitHub',
           position: 'right',
         },
@@ -37,30 +37,9 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Course',
               to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+            }
           ],
         },
         {
@@ -68,16 +47,12 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              href: 'https://blog.interlink-ua.com/article/internship/',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} InterLink inCamp. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -86,15 +61,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          remarkPlugins: [
+            [require('remark-oembed'), { syncWidget: true}]
+          ],
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/alexanderko/interlink-incamp/edit/master/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
