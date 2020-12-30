@@ -7,10 +7,6 @@ description: Основні властивості CSS за категоріям
 
 https://youtu.be/TAS4BPsb6xI
 
-### Typography and text
-
-https://marksheet.io/css-text.html
-
 ### Box model
 
 https://marksheet.io/css-box-model.html
