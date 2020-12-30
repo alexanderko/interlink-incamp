@@ -65,7 +65,7 @@ module.exports = {
             [require('remark-oembed'), { syncWidget: true}]
           ],
           editUrl:
-            'https://github.com/alexanderko/interlink-incamp/edit/master/docs/',
+            'https://github.com/alexanderko/interlink-incamp/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
