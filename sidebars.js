@@ -9,16 +9,14 @@ module.exports = {
         'html-css/html-tags',
         'html-css/css-intro',
         'html-css/css-properties',
-        {
-          type: 'link',
-          label: 'Typography',
-          href: 'https://marksheet.io/css-text.html'
-        },
+        'html-css/typography',
         'html-css/task-cv',
+        'html-css/flow',
         'html-css/flexbox',
         'html-css/layout',
         'html-css/size-units',
-        'html-css/style-guide'
+        'html-css/style-guide',
+        'html-css/animation'
       ]
   },
 ]
