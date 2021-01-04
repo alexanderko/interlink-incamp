@@ -26,6 +26,19 @@
 			"$0"
 		],
 		"description": "Insert document Front Matter"
+	},
+
+	"Front Matter - Task": {
+		"scope": "markdown",
+		"prefix": "fmt",
+		"body": [
+			"---",
+			"title: \"Завдання: $1\"",
+			"sidebar_label: 💻 $1",
+			"---",
+			"$0"
+		],
+		"description": "Insert Front Matter for task document"
 	}
 
 }
