@@ -1,7 +1,6 @@
 ---
 id: intro
-title: HTML/CSS Introduction
-sidebar_label: Introduction
+title: HTML/CSS
 description: >-
   Знайомство з інструментами розробника, блочними та строчними елементами,
   позиціонуванням, семантичними тегами, flex, grid system.

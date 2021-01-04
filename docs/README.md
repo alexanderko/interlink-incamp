@@ -1,4 +1,5 @@
 ---
+id: course
 title: План інтернатури
 slug: /
 ---
@@ -8,7 +9,7 @@ slug: /
 1. Введення в Java
 2. Мережеві протоколи
 3. REST API та Spring Boot
-4. HTML/CSS для побудови UI додатку
+4. [HTML/CSS](html-css/README.md) для побудови UI додатку
 5. Сучасний JS та робота з DOM
 6. Компонентна розробка на Angular
 

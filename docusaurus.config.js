@@ -19,10 +19,9 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Курс',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/alexanderko/interlink-incamp',
           label: 'GitHub',
@@ -34,11 +33,11 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Курс',
           items: [
             {
-              label: 'Course',
-              to: 'docs/',
+              label: 'HTML/CSS',
+              to: 'docs/html-css/intro',
             }
           ],
         },
