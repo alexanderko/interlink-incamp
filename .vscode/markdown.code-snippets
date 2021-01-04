@@ -39,6 +39,32 @@
 			"$0"
 		],
 		"description": "Insert Front Matter for task document"
+	}, 
+
+
+	"Checklist with import" : {
+		"scope": "markdown",
+		"prefix": "chei",
+		"body": [
+			"import Checklist from '@site/src/components/Checklist'",
+			"<Checklist>",
+			"* $1",
+			"</Checklist>",
+			"$0"
+		],
+		"description": "Insert Checklist with import"
+	},
+
+	"Checklist" : {
+		"scope": "markdown",
+		"prefix": "che",
+		"body": [
+			"<Checklist>",
+			"* $1",
+			"</Checklist>",
+			"$0"
+		],
+		"description": "Insert Checklist"
 	}
 
 }

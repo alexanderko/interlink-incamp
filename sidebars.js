@@ -30,6 +30,7 @@ const htmlCss = [
     items: [
       'html-css/layout',
       'html-css/flexbox',
+      'html-css/task-layout',
     ]
   },
   'html-css/style-guide',
