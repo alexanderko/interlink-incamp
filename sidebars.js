@@ -20,6 +20,7 @@ const htmlCss = [
       'html-css/box-model',
       'html-css/size-units',
       'html-css/flow',
+      'html-css/task-cv-styles',
     ]
   },
   {
