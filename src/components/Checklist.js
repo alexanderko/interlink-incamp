@@ -25,7 +25,7 @@ class LocalProgressStore {
     }
 
     getDocPath() {
-        return window.location.pathname.replace(this.basePath, '');
+        return window.location.pathname.replace(this.basePath, '').replace(/\/$/, '');
     }
 }
 
