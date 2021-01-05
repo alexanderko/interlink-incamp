@@ -33,6 +33,13 @@ const MDXComponents = {
   h5: Heading('h5'),
   h6: Heading('h6'),
   Checklist,
+  ul: (props) => {
+    if (props.className == 'contains-task-list') {
+      return <Checklist {...props} />
+    } else {
+      return <ul {...props} />;
+    }
+  },
 };
 
 export default MDXComponents;

@@ -37,7 +37,7 @@ const fakeStore = {
 const progressStore = typeof window === "undefined" ? fakeStore : new LocalProgressStore('/docs/');
 
 export default function Checklist({children}) {
-    const [items, dispatch] = useReducer(itemsReducer, textToItems(children))
+    const [items, dispatch] = useReducer(itemsReducer, children, childrenToItems);
     const itemsDone = items.reduce((sum, item) => sum + (item.done ? 1 : 0), 0);
     return (
         <div>
@@ -74,11 +74,21 @@ function Item ({item, onToggle}) {
     );
 }
 
-function textToItems(text) {
-    return text.split('* ').slice(1).map(name => {
+function childrenToItems (children) {
+    const names = typeof children == 'string' ? textToNames(children) : nodesToNames(children);
+    return names.map(name => {
         return  {
             name: name,
             done: progressStore.getStatus(name)
         }
     });
+}  
+
+function textToNames(text) {
+    return text.split('* ').slice(1);
+}
+
+function nodesToNames(nodes) {
+    console.log(nodes);
+    return nodes.map(li => li.props.children[2])
 }
