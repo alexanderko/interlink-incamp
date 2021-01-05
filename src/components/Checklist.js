@@ -15,12 +15,12 @@ class LocalProgressStore {
     saveStatus({name, done}) {
         const items = this.getItemsMap();
         items[name] = done ? 1 : 0;
-        localStorage.setItem(this.getDocPath(), JSON.stringify(items));
+        window.localStorage.setItem(this.getDocPath(), JSON.stringify(items));
     }
 
     getItemsMap() {
         return JSON.parse(
-            localStorage.getItem(this.getDocPath()) || '{}'
+            window.localStorage.getItem(this.getDocPath()) || '{}'
         );
     }
 
@@ -29,7 +29,12 @@ class LocalProgressStore {
     }
 }
 
-const progressStore = new LocalProgressStore('/docs/');
+const fakeStore = {
+    getStatus: () => false,
+    saveStatus: () => undefined
+}
+
+const progressStore = typeof window === "undefined" ? fakeStore : new LocalProgressStore('/docs/');
 
 export default function Checklist({children}) {
     const [items, dispatch] = useReducer(itemsReducer, textToItems(children))
