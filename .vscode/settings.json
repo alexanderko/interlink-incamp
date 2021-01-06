@@ -8,6 +8,8 @@
         "fake",
         "intro",
         "sidebar",
-        "Сhrome"
-    ]
+        "Сhrome",
+        "sidebar"
+    ],
+    "editor.renderWhitespace": "trailing"
 }

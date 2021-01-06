@@ -35,6 +35,7 @@ const htmlCss = [
     ]
   },
   'html-css/markup-by-prototype',
+  'html-css/css-processors',
   'html-css/style-guide',
   'html-css/animation'
 ];
