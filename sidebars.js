@@ -34,6 +34,7 @@ const htmlCss = [
       'html-css/task-layout',
     ]
   },
+  'html-css/markup-by-prototype',
   'html-css/style-guide',
   'html-css/animation'
 ];
