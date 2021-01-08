@@ -41,13 +41,23 @@ const htmlCss = [
   'html-css/animation'
 ];
 
+const javascript = [
+  'javascript/intro',
+  'javascript/types',
+]
+
 module.exports = {
   main: [
     'course',
     {
       type: 'ref',
       id: 'html-css/intro',
+    },
+    {
+      type: 'ref',
+      id: 'javascript/intro'
     }
   ],
-  htmlCss
+  htmlCss,
+  javascript
 }

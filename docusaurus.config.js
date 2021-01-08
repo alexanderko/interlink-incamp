@@ -38,7 +38,11 @@ module.exports = {
             {
               label: 'HTML/CSS',
               to: 'docs/html-css/intro',
-            }
+            },
+            {
+              label: 'JavaScript',
+              to: 'docs/javascript/intro',
+            },
           ],
         },
         {

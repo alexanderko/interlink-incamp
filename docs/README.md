@@ -10,7 +10,7 @@ slug: /
 2. Мережеві протоколи
 3. REST API та Spring Boot
 4. [HTML/CSS](html-css/README.md) для побудови UI додатку
-5. Сучасний JS та робота з DOM
+5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
 6. Компонентна розробка на Angular
 
 ## Модуль 2. Процеси, практики та командна робота
