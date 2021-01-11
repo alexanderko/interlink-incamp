@@ -1,6 +1,8 @@
 ---
 title: JavaScript
 id: intro
+description: >-
+    JavaScript используется для создания динамических страниц и web-приложений. 
 ---
 
 На HTML страницах JavaScript используется для: 

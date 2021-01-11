@@ -41,10 +41,12 @@ const htmlCss = [
   'html-css/animation'
 ];
 
-const javascript = [
-  'javascript/intro',
-  'javascript/types',
-]
+const javascript = pathPrefixer('javascript/')([
+  'intro',
+  'types',
+  'inner-html',
+  'task-01--todo-list-item-html',
+]);
 
 module.exports = {
   main: [
@@ -60,4 +62,12 @@ module.exports = {
   ],
   htmlCss,
   javascript
+}
+
+function pathPrefixer(prefix) {
+  function prependPrefix (items) {
+    return items.map(item => prefix + item)
+  }
+
+  return prependPrefix;
 }
