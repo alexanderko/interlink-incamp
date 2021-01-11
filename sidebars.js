@@ -47,6 +47,7 @@ const javascript = pathPrefixer('javascript/')([
   'inner-html',
   'task-01--todo-list-item-html',
   'dom-event-handling',
+  'task-02--todo-list-evets',
 ]);
 
 module.exports = {
