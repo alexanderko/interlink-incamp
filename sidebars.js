@@ -46,12 +46,18 @@ const javascript = pathPrefixer('javascript/')([
   'types',
   'inner-html',
   'task-01--todo-list-item-html',
-  'dom-event-handling',
-  'task-02--todo-list-events',
-  'submitting-html-form',
-  'task-03--todo-list-form',
-  'fetch-api',
-  'task-04--use-fetch-api',
+  category('Обработка событий DOM', [
+    'dom-event-handling',
+    'task-02--todo-list-events',
+  ]),
+  category('Обработка отправки формы', [
+    'submitting-html-form',
+    'task-03--todo-list-form',
+  ]),
+  category('Fetch API', [
+    'fetch-api',
+    'task-04--use-fetch-api',
+  ])
 ]);
 
 module.exports = {
@@ -70,9 +76,22 @@ module.exports = {
   javascript
 }
 
+function category(label, items) {
+  return {
+    type: 'category',
+    collapsed: false,
+    label,
+    items
+  };
+}
+
 function pathPrefixer(prefix) {
-  function prependPrefix (items) {
-    return items.map(item => prefix + item)
+  function prependPrefix (item) {
+    if (typeof item == 'string') return prefix + item;
+    if (Array.isArray(item)) return item.map(prependPrefix)
+    switch (item.type) {
+      case 'category': return {...item, items: prependPrefix(item.items)}
+    }
   }
 
   return prependPrefix;
