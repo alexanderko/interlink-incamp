@@ -16,5 +16,7 @@ description: >-
 3. Срабатывание таймера или интервала
 
 ## План лекций
-1. [Типы](types.md)
+1. [Типы в JavaScript](types.md)
 2. [Работа с HTML внутри элемента](inner-html.md)
+3. [Обработка событий DOM](dom-event-handling.md)
+4. [Обработка отправки формы](submitting-html-form.md)

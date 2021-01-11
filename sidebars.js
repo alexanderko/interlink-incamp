@@ -48,6 +48,7 @@ const javascript = pathPrefixer('javascript/')([
   'task-01--todo-list-item-html',
   'dom-event-handling',
   'task-02--todo-list-evets',
+  'submitting-html-form',
 ]);
 
 module.exports = {
