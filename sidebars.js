@@ -50,6 +50,8 @@ const javascript = pathPrefixer('javascript/')([
   'task-02--todo-list-events',
   'submitting-html-form',
   'task-03--todo-list-form',
+  'fetch-api',
+  'task-04--use-fetch-api',
 ]);
 
 module.exports = {
