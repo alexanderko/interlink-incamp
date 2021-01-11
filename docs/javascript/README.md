@@ -17,3 +17,4 @@ description: >-
 
 ## План лекций
 1. [Типы](types.md)
+2. [Работа с HTML внутри элемента](inner-html.md)
