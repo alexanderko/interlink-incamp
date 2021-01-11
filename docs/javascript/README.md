@@ -20,3 +20,5 @@ description: >-
 2. [Работа с HTML внутри элемента](inner-html.md)
 3. [Обработка событий DOM](dom-event-handling.md)
 4. [Обработка отправки формы](submitting-html-form.md)
+5. [Fetch API](fetch-api.md)
+
