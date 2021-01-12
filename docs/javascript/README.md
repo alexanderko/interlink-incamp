@@ -21,4 +21,5 @@ description: >-
 3. [Обработка событий DOM](dom-event-handling.md)
 4. [Обработка отправки формы](submitting-html-form.md)
 5. [Fetch API](fetch-api.md)
+6. [Функциональное программирование](functional-programming.md)
 

@@ -57,7 +57,8 @@ const javascript = pathPrefixer('javascript/')([
   category('Fetch API', [
     'fetch-api',
     'task-04--use-fetch-api',
-  ])
+  ]),
+  'functional-programming',
 ]);
 
 module.exports = {
