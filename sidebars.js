@@ -61,6 +61,10 @@ const javascript = pathPrefixer('javascript/')([
   'functional-programming',
 ]);
 
+const angular = pathPrefixer('angular/')([
+  'intro'
+])
+
 const coursePlan = {
   type: 'ref', 
   id: 'course'
@@ -69,6 +73,7 @@ const coursePlan = {
 [
   htmlCss,
   javascript,
+  angular,
 ].forEach(sidebar => sidebar.unshift(coursePlan));
 
 module.exports = {
@@ -81,10 +86,15 @@ module.exports = {
     {
       type: 'ref',
       id: 'javascript/intro'
+    },
+    {
+      type: 'ref',
+      id: 'angular/intro'
     }
   ],
   htmlCss,
   javascript,
+  angular,
 }
 
 function category(label, items) {

@@ -43,6 +43,10 @@ module.exports = {
               label: 'JavaScript',
               to: 'docs/javascript/intro',
             },
+            {
+              label: 'Angular',
+              to: 'docs/angular/intro',
+            },
           ],
         },
         {
