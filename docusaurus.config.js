@@ -17,9 +17,27 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          to: 'docs/course',
+          activeBasePath: 'docs/course',
           label: 'Курс',
+          position: 'left',
+        },
+        {
+          to: 'docs/html-css/intro',
+          activeBasePath: 'docs/html-css',
+          label: 'HTML/CSS',
+          position: 'left',
+        },
+        {
+          to: 'docs/javascript/intro',
+          activeBasePath: 'docs/javascript',
+          label: 'JavaScript',
+          position: 'left',
+        },
+        {
+          to: 'docs/angular/intro',
+          activeBasePath: 'docs/angular',
+          label: 'Angular',
           position: 'left',
         },
         {
