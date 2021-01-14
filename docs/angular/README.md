@@ -13,3 +13,9 @@ id: intro
 
 https://youtu.be/KhqzNHwFZ0s
 
+## План лекций
+
+1. [Interpolation](interpolation.md)
+2. [Data Binding](data-binding.md)
+3. [Bootstrap и Sass](bootstrap-and-sass.md)
+4. [Компоненты](components.md)

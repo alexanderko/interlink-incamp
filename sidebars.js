@@ -62,7 +62,11 @@ const javascript = pathPrefixer('javascript/')([
 ]);
 
 const angular = pathPrefixer('angular/')([
-  'intro'
+  'intro',
+  'interpolation',
+  'data-binding',
+  'bootstrap-and-sass',
+  'components',
 ])
 
 const coursePlan = {
