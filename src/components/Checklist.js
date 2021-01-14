@@ -42,9 +42,9 @@ export default function Checklist({children}) {
     return (
         <div>
             <progress value={itemsDone} max={items.length}> {itemsDone} of {items.length} </progress>
-            <ul>
+            <ol>
                 {items.map((item, index) => <Item key={index} item={item} onToggle={dispatch} />)}
-            </ul>
+            </ol>
         </div>
     )
 }
@@ -64,31 +64,39 @@ function itemsReducer(items, item) {
 
 
 function Item ({item, onToggle}) {
-    const {name, done} = item;
+    const {name, content, done} = item;
     return (
         <li className={clsx({[styles.done]: done})}>
             <label>
-                <input type="checkbox" checked={done} onChange={() => onToggle(item)} /> {name}
+                <input type="checkbox" checked={done} onChange={() => onToggle(item)} /> {content || name}
             </label>
         </li>
     );
 }
 
 function childrenToItems (children) {
-    const names = typeof children == 'string' ? textToNames(children) : nodesToNames(children);
-    return names.map(name => {
-        return  {
-            name: name,
-            done: progressStore.getStatus(name)
-        }
-    });
+    const items = typeof children == 'string' ? textToItems(children) : nodesToItems(children);
+    items.forEach(item => item.done = progressStore.getStatus(item.name))
+    return items;
 }  
 
-function textToNames(text) {
-    return text.split('* ').slice(1);
+function textToItems(text) {
+    return text.split('* ').slice(1).map(name => ({name}));
 }
 
-function nodesToNames(nodes) {
-    console.log(nodes);
-    return nodes.map(li => li.props.children[2])
+function nodesToItems(nodes) {
+    return nodes.map(li => {
+        let content = li.props.children.slice(2)
+        let name = content.map(nodeToText).join(' ')
+        return { content, name }
+    })
+}
+
+function nodeToText(node) {
+    if (isString(node)) return node;
+    return node.children;
+}
+
+function isString(val) {
+    return typeof val == 'string';
 }
