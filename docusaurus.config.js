@@ -40,6 +40,7 @@ module.exports = {
           label: 'Angular',
           position: 'left',
         },
+        {to: 'blog', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/alexanderko/interlink-incamp',
           label: 'GitHub',
@@ -71,7 +72,11 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Заметки с передовой',
+              to: 'blog'
+            },
+            {
+              label: 'InterLink Blog',
               href: 'https://blog.interlink-ua.com/article/internship/',
             }
           ],
