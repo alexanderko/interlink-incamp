@@ -59,6 +59,7 @@ const javascript = pathPrefixer('javascript/')([
     'task-04--use-fetch-api',
   ]),
   'functional-programming',
+  'reactive-programming',
 ]);
 
 const angular = pathPrefixer('angular/')([
