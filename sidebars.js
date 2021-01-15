@@ -69,6 +69,7 @@ const angular = pathPrefixer('angular/')([
   'components',
   'task-01--todo-list',
   'task-02--http',
+  'task-03--routing',
 ])
 
 const coursePlan = {
