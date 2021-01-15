@@ -13,6 +13,14 @@ import Checklist from '@site/src/components/Checklist'
 
 import styles from './styles.module.css';
 
+const ChecklistOrDefault = listType => props => {
+  if (props.className == 'contains-task-list') {
+    return <Checklist {...props} />
+  } else {
+    return React.createElement(listType, props);
+  }
+}
+
 const MDXComponents = {
   code: (props) => {
     const {children} = props;
@@ -33,13 +41,8 @@ const MDXComponents = {
   h5: Heading('h5'),
   h6: Heading('h6'),
   Checklist,
-  ul: (props) => {
-    if (props.className == 'contains-task-list') {
-      return <Checklist {...props} />
-    } else {
-      return <ul {...props} />;
-    }
-  },
+  ul: ChecklistOrDefault('ul'),
+  ol: ChecklistOrDefault('ol'),
 };
 
 export default MDXComponents;
