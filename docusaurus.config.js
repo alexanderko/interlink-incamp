@@ -40,6 +40,12 @@ module.exports = {
           label: 'Angular',
           position: 'left',
         },
+        {
+          to: 'docs/agile/intro',
+          activeBasePath: 'docs/agile',
+          label: 'Agile',
+          position: 'left',
+        },
         {to: 'blog', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/alexanderko/interlink-incamp',
@@ -52,7 +58,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Курс',
+          title: 'Front-end',
           items: [
             {
               label: 'HTML/CSS',
@@ -67,6 +73,15 @@ module.exports = {
               to: 'docs/angular/intro',
             },
           ],
+        },
+        {
+          title: 'Процессы и практики',
+          items: [
+            {
+              label: 'Agile',
+              to: 'docs/agile/intro',
+            },
+          ]
         },
         {
           title: 'More',

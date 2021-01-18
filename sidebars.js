@@ -73,6 +73,11 @@ const angular = pathPrefixer('angular/')([
   'task-03--routing',
 ])
 
+const agile = pathPrefixer('agile/')([
+  'intro',
+  'project-planning',
+])
+
 const coursePlan = {
   type: 'ref', 
   id: 'course'
@@ -82,6 +87,7 @@ const coursePlan = {
   htmlCss,
   javascript,
   angular,
+  agile,
 ].forEach(sidebar => sidebar.unshift(coursePlan));
 
 module.exports = {
@@ -98,11 +104,16 @@ module.exports = {
     {
       type: 'ref',
       id: 'angular/intro'
-    }
+    },
+    {
+      type: 'ref',
+      id: 'agile/intro'
+    },
   ],
   htmlCss,
   javascript,
   angular,
+  agile,
 }
 
 function category(label, items) {
