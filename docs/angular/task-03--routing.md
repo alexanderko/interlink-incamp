@@ -17,3 +17,23 @@ sidebar_label: 💻 Routing
 
 1. [ ] `/today` -- показываем компонент страницы `TodayTasksPage`
 2. [ ] `/todo-list/:id` -- показываем компонент страницы `TodoListPage`, выводим информацию про список с id `:id` используя [Route Parameters](https://angular.io/guide/router-tutorial-toh#route-parameters)
+
+## Route params subscription
+
+Если при смене пути новый "ведет" к то-му же компоненту, он уже не будет повторно инитиализирован. И компонент "не узнает", что путь поменялся и надо получить новый список задач. Поэтому, в компоненте вывода всех задач по `id` списка (путь `/todo-list/:id`) надо подписаться на смену параметров пути. 
+
+```typescript title="todo-list-page.component.ts"
+class TodoListPageComponent {
+
+    tasks: Task[] = [];
+
+    constructor(
+        private route: ActivatedRoute, 
+        private taskService: TaskService,
+    ) {
+        this.route.params.pipe(
+            switchMap(params => this.taskService.getTasksByListId(params.id))
+        ).subscribe(listTasks => this.tasks = listTasks);
+    }
+}
+```
