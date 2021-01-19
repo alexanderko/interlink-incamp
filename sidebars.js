@@ -73,6 +73,12 @@ const angular = pathPrefixer('angular/')([
   'task-03--routing',
 ])
 
+const microProject = pathPrefixer('micro-project/')([
+  'intro',
+  'project-domains',
+  'execution-flow',
+])
+
 const agile = pathPrefixer('agile/')([
   'intro',
   'project-planning',
@@ -87,6 +93,7 @@ const coursePlan = {
   htmlCss,
   javascript,
   angular,
+  microProject,
   agile,
 ].forEach(sidebar => sidebar.unshift(coursePlan));
 
@@ -107,12 +114,17 @@ module.exports = {
     },
     {
       type: 'ref',
+      id: 'micro-project/intro'
+    },
+    {
+      type: 'ref',
       id: 'agile/intro'
     },
   ],
   htmlCss,
   javascript,
   angular,
+  microProject,
   agile,
 }
 

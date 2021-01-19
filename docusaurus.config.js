@@ -41,6 +41,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'docs/micro-project/intro',
+          activeBasePath: 'docs/micro-project',
+          label: 'Микро-проект',
+          position: 'left',
+        },
+        {
           to: 'docs/agile/intro',
           activeBasePath: 'docs/agile',
           label: 'Agile',
@@ -77,6 +83,10 @@ module.exports = {
         {
           title: 'Процессы и практики',
           items: [
+            {
+              label: 'Микро-проект',
+              to: 'docs/micro-project/intro',
+            },
             {
               label: 'Agile',
               to: 'docs/agile/intro',
