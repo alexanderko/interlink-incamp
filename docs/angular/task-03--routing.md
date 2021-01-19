@@ -37,3 +37,19 @@ class TodoListPageComponent {
     }
 }
 ```
+
+## Active link
+
+В компоненте `Dashboard` вам понадобиться выделять цветом активный список. В routing механизме для это есть специальная директива [routerLinkActive](https://angular.io/guide/router-tutorial#identify-the-active-route). В ее значении указывается CSS класс, который должен быть добавлен к HTML елементу c ссылкой на текущий активированный путь. В примере ниже `div` списка соответствующий текущему пути получит CSS класс `todo-list_active` в дополнение к базовому классу `todo-list`.
+
+```html {4,6} title="dashboard.component.html"
+<div
+    class="todo-list" 
+    *ngFor="let list of lists"
+    routerLinkActive="todo-list_active"
+>
+  <a [routerLink]="['/todo-list', list.id]">
+    {{list.name}}
+  </a>
+</div>
+```
