@@ -82,6 +82,7 @@ const microProject = pathPrefixer('micro-project/')([
 const agile = pathPrefixer('agile/')([
   'intro',
   'project-planning',
+  'user-story-discussion'
 ])
 
 const coursePlan = {
