@@ -18,7 +18,13 @@ const java = pathPrefixer('java/')([
     'conditional-statements',
     'ternary-operator',
     'for-loop',
-  ]))
+  ])),
+  'tic-tac-toe',
+  category('OOP', pathPrefixer('oop/')([
+    'structures',
+    'business-types',
+    'methods',
+  ])),
 ])
 
 const htmlCss = [
