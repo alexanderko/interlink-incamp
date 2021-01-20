@@ -1,3 +1,26 @@
+const java = pathPrefixer('java/')([
+  'intro',
+  category('Intro', pathPrefixer('intro/')([
+    'java-versions-overview',
+    'openjdk-11-install',
+    'install-idea',
+    'create-console-app',
+    'compile-and-run-from-console',
+    'method-main',
+    'keywords',
+    'one-parameter-function',
+    'variables',
+    'jshell-java-repl',
+    'whole-numbers',
+    'compare-whole-numbers',
+    'function-with-return',
+    'logical-operators',
+    'conditional-statements',
+    'ternary-operator',
+    'for-loop',
+  ]))
+])
+
 const htmlCss = [
   'html-css/intro',
   {
@@ -91,6 +114,7 @@ const coursePlan = {
 };
 
 [
+  java,
   htmlCss,
   javascript,
   angular,
@@ -101,6 +125,10 @@ const coursePlan = {
 module.exports = {
   main: [
     coursePlan.id,
+    {
+      type: 'ref',
+      id: 'java/intro',
+    },
     {
       type: 'ref',
       id: 'html-css/intro',
@@ -122,6 +150,7 @@ module.exports = {
       id: 'agile/intro'
     },
   ],
+  java,
   htmlCss,
   javascript,
   angular,

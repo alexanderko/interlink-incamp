@@ -5,7 +5,7 @@ title: План інтернатури
 
 ## Модуль 1. Опанування технологій веб розробки
 
-1. Введення в Java
+1. [Введення в Java](java/README.md)
 2. Мережеві протоколи
 3. REST API та Spring Boot
 4. [HTML/CSS](html-css/README.md) для побудови UI додатку

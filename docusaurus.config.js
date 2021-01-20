@@ -23,6 +23,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'docs/java/intro',
+          activeBasePath: 'docs/java',
+          label: 'Java',
+          position: 'left',
+        },
+        {
           to: 'docs/html-css/intro',
           activeBasePath: 'docs/html-css',
           label: 'HTML/CSS',
@@ -63,6 +69,15 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Back-end',
+          items: [
+            {
+              label: 'Java',
+              to: 'docs/java/intro',
+            },
+          ],
+        },
         {
           title: 'Front-end',
           items: [
