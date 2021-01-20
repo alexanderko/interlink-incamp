@@ -21,6 +21,16 @@ const ChecklistOrDefault = listType => props => {
   }
 }
 
+const videoExt = /\.(mp4|mkv)/;
+function isInCampVideo(urlString) {
+  try {
+    const url = new URL(urlString);
+    return url.host == 'incamp.in6k.com' && videoExt.test(url.pathname);  
+  } catch (error) {
+    return false;
+  }
+}
+
 const MDXComponents = {
   code: (props) => {
     const {children} = props;
@@ -32,7 +42,7 @@ const MDXComponents = {
     }
     return children;
   },
-  a: (props) => <Link {...props} />,
+  a: (props) => (isInCampVideo(props.href)? <span>{props.href}</span> : <Link {...props} />),
   pre: (props) => <div className={styles.mdxCodeBlock} {...props} />,
   h1: Heading('h1'),
   h2: Heading('h2'),
