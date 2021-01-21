@@ -155,6 +155,10 @@ module.exports = {
       type: 'ref',
       id: 'agile/intro'
     },
+    category('Общие темы', [
+      'git',
+      'data-structures',
+    ]),
   ],
   java,
   htmlCss,
