@@ -24,6 +24,7 @@ const java = pathPrefixer('java/')([
     'structures',
     'business-types',
     'methods',
+    'encapsulation',
   ])),
 ])
 
