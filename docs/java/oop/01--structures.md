@@ -1,7 +1,7 @@
 ---
 id: structures
-sidebar_label: Structures
-title: Structures in Java
+sidebar_label: Структуры
+title: Структуры в Java
 ---
 
 https://youtu.be/aoOOkxO7cak

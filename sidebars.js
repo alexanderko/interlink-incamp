@@ -20,7 +20,7 @@ const java = pathPrefixer('java/')([
     'for-loop',
   ])),
   'tic-tac-toe',
-  category('OOP', pathPrefixer('oop/')([
+  category('ООП', pathPrefixer('oop/')([
     'structures',
     'business-types',
     'methods',

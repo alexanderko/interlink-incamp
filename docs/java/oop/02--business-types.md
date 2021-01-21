@@ -1,7 +1,7 @@
 ---
 id: business-types
-sidebar_label: 💻 Business types
-title: Business types
+sidebar_label: 💻 Бизнес-типы
+title: Бизнес-типы
 ---
 
 https://youtu.be/nOovR8ZFrhg

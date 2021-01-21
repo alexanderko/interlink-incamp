@@ -24,7 +24,7 @@ module.exports = {
         },
         {
           to: 'docs/java/intro',
-          activeBasePath: 'docs/java',
+          activeBasePath: 'docs/java/',
           label: 'Java',
           position: 'left',
         },

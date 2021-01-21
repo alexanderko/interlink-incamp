@@ -1,7 +1,7 @@
 ---
 id: methods
-sidebar_label: 💻 Methods
-title: Methods in Java
+sidebar_label: 💻 Методы
+title: Методы в Java
 ---
 
 https://youtu.be/FpwfyjCMqyc
