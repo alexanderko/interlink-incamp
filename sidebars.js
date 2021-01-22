@@ -18,7 +18,7 @@ const java = pathPrefixer('java/')([
     'conditional-statements',
     'ternary-operator',
     'for-loop',
-  ])),
+  ]), {collapsed: true}),
   'tic-tac-toe',
   category('ООП', pathPrefixer('oop/')([
     'structures',
@@ -169,12 +169,13 @@ module.exports = {
   agile,
 }
 
-function category(label, items) {
+function category(label, items, options = {collapsed: false}) {
   return {
     type: 'category',
     collapsed: false,
     label,
-    items
+    items,
+    ...options
   };
 }
 
