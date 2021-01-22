@@ -26,6 +26,7 @@ const java = pathPrefixer('java/')([
     'methods',
     'encapsulation',
   ])),
+  'generics',
 ])
 
 const htmlCss = [
