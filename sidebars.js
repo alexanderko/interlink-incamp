@@ -115,6 +115,7 @@ const agile = pathPrefixer('agile/')([
   'project-planning',
   'user-story-discussion',
   'user-stories-invest',
+  'estimation',
 ])
 
 const coursePlan = {
