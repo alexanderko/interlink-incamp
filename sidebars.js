@@ -29,6 +29,19 @@ const java = pathPrefixer('java/')([
   'generics',
 ])
 
+const csharp = pathPrefixer('csharp/')([
+  'intro',
+  'dotnet-overview',
+  'basics',
+  category('OOP', [
+    'oop',
+    ...pathPrefixer('oop/')([
+      'stutends-task',
+      'silpo-bonus-task',
+    ])
+  ])
+])
+
 const htmlCss = [
   'html-css/intro',
   {
@@ -126,6 +139,7 @@ const coursePlan = {
 
 [
   java,
+  csharp,
   htmlCss,
   javascript,
   angular,
@@ -139,6 +153,10 @@ module.exports = {
     {
       type: 'ref',
       id: 'java/intro',
+    },
+    {
+      type: 'ref',
+      id: 'csharp/intro',
     },
     {
       type: 'ref',
@@ -162,10 +180,12 @@ module.exports = {
     },
     category('Общие темы', [
       'git',
+      'terminal',
       'data-structures',
     ]),
   ],
   java,
+  csharp,
   htmlCss,
   javascript,
   angular,

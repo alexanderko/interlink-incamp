@@ -76,6 +76,10 @@ module.exports = {
               label: 'Java',
               to: 'docs/java/intro',
             },
+            {
+              label: '.NET Core, C#',
+              to: 'docs/csharp/intro',
+            },
           ],
         },
         {
