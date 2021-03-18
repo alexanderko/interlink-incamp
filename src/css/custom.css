@@ -25,7 +25,16 @@
 }
 
 /* make YouTube video take all available width */
-.remark-oembed-you-tube iframe {
+.remark-oembed-you-tube {
   width: 100%;
-  height: 200px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.remark-oembed-you-tube iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
