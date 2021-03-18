@@ -36,15 +36,15 @@ const csharp = pathPrefixer('csharp/')([
   'tic-tac-toe',
   category('ООП', [
     'oop',
-      'methods',
+    'methods',
   ]),
   'collections',
   category('Проектирование взаимодействия', [
-      'interaction',
-      'students-task',
-      'silpo-bonus-task',
-    ])
+    'interaction',
+    'students-task',
+    'silpo-bonus-task',
   ])
+])
 
 const htmlCss = [
   'html-css/intro',
@@ -154,6 +154,7 @@ const coursePlan = {
 module.exports = {
   main: [
     coursePlan.id,
+    'how-to-complete',
     {
       type: 'ref',
       id: 'java/intro',
@@ -162,26 +163,30 @@ module.exports = {
       type: 'ref',
       id: 'csharp/intro',
     },
-    {
-      type: 'ref',
-      id: 'html-css/intro',
-    },
-    {
-      type: 'ref',
-      id: 'javascript/intro'
-    },
-    {
-      type: 'ref',
-      id: 'angular/intro'
-    },
-    {
-      type: 'ref',
-      id: 'micro-project/intro'
-    },
-    {
-      type: 'ref',
-      id: 'agile/intro'
-    },
+    category('Front-end', [
+      {
+        type: 'ref',
+        id: 'html-css/intro',
+      },
+      {
+        type: 'ref',
+        id: 'javascript/intro'
+      },
+      {
+        type: 'ref',
+        id: 'angular/intro'
+      },
+    ]),
+    category('Процессы и практики', [
+      {
+        type: 'ref',
+        id: 'micro-project/intro'
+      },
+      {
+        type: 'ref',
+        id: 'agile/intro'
+      },
+    ]),
     category('Общие темы', [
       'git',
       'terminal',
