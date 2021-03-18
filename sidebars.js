@@ -36,14 +36,15 @@ const csharp = pathPrefixer('csharp/')([
   'tic-tac-toe',
   category('ООП', [
     'oop',
-    ...pathPrefixer('oop/')([
       'methods',
+  ]),
+  'collections',
+  category('Проектирование взаимодействия', [
       'interaction',
       'students-task',
       'silpo-bonus-task',
     ])
   ])
-])
 
 const htmlCss = [
   'html-css/intro',

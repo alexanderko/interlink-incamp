@@ -1,5 +1,6 @@
 ---
 id: interaction
+sidebar_label: Лекция
 title: Проектирование взаимодействия
 ---
 
