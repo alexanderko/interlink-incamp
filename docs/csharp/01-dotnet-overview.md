@@ -11,6 +11,8 @@ title: .NET Core Overview
 * крос-платформена \(Windows, macOS, Linux\)
 * для створення Desktop та Server-side додатків
 
+[Introduction to .NET](https://docs.microsoft.com/en-us/dotnet/core/introduction)
+
 ## Install
 
 1. Звантажити дистрибутив для вашої ОС за посиланням [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
@@ -38,4 +40,3 @@ title: .NET Core Overview
 :::
 
 Запускаем приложение `dotnet run` 
-

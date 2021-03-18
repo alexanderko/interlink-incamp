@@ -33,10 +33,13 @@ const csharp = pathPrefixer('csharp/')([
   'intro',
   'dotnet-overview',
   'basics',
-  category('OOP', [
+  'tic-tac-toe',
+  category('ООП', [
     'oop',
     ...pathPrefixer('oop/')([
-      'stutends-task',
+      'methods',
+      'interaction',
+      'students-task',
       'silpo-bonus-task',
     ])
   ])
