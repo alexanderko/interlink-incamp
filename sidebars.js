@@ -37,6 +37,7 @@ const csharp = pathPrefixer('csharp/')([
   category('ООП', [
     'oop',
     'methods',
+    'inheritance',
   ]),
   'collections',
   category('Проектирование взаимодействия', [
