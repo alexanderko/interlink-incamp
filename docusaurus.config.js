@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'interlink', // Usually your GitHub org/user name.
   projectName: 'inCamp', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['csharp'],
+    },
     navbar: {
       title: 'InterLink inCamp',
       logo: {
