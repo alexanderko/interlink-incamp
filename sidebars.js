@@ -47,6 +47,18 @@ const csharp = pathPrefixer('csharp/')([
   ])
 ])
 
+const aspnetCore = pathPrefixer('aspnet-core/')([
+  'intro',
+  'net-protocols',
+  'tcp-listener',
+  'net-console-game',
+  'http',
+  'http-endpoints',
+  'mvc',
+  'controller',
+  'get-post-actions-tasks',
+])
+
 const htmlCss = [
   'html-css/intro',
   {
@@ -145,6 +157,7 @@ const coursePlan = {
 [
   java,
   csharp,
+  aspnetCore,
   htmlCss,
   javascript,
   angular,
@@ -160,10 +173,16 @@ module.exports = {
       type: 'ref',
       id: 'java/intro',
     },
-    {
-      type: 'ref',
-      id: 'csharp/intro',
-    },
+    category('.NET',[
+      {
+        type: 'ref',
+        id: 'csharp/intro',
+      },
+      {
+        type: 'ref',
+        id: 'aspnet-core/intro',
+      },
+    ]),
     category('Front-end', [
       {
         type: 'ref',
@@ -196,6 +215,7 @@ module.exports = {
   ],
   java,
   csharp,
+  aspnetCore,
   htmlCss,
   javascript,
   angular,
