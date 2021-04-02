@@ -12,5 +12,5 @@ title: ASP.NET Core
    - [Простой endpoint на ASP.NET Core](02.1-http-endpoints.md)
 3. [MVC](03-mvc.md)
    - [Контролер](03.1-controller.md) для [методов GET и POST](03.2-get-post-actions-task.md)
-4. Сервисы, Dependency Injection
+4. [Сервисы, Dependency Injection](04-services-di.md)
 5. REST API
