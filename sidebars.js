@@ -58,6 +58,7 @@ const aspnetCore = pathPrefixer('aspnet-core/')([
   'controller',
   'get-post-actions-tasks',
   'services-di',
+  'rest-api',
 ])
 
 const htmlCss = [

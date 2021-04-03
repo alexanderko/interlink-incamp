@@ -57,3 +57,5 @@ public class TodoItemService
     }
 }
 ```
+
+[IoC/DI в MVC фреймворке](https://youtu.be/fYcgjl1qWgc)

@@ -13,4 +13,4 @@ title: ASP.NET Core
 3. [MVC](03-mvc.md)
    - [Контролер](03.1-controller.md) для [методов GET и POST](03.2-get-post-actions-task.md)
 4. [Сервисы, Dependency Injection](04-services-di.md)
-5. REST API
+5. [REST API](05-rest-api.md)
