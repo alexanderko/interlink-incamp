@@ -18,7 +18,7 @@ title: План інтернатури
 
 1. [.NET Core, C#](csharp/README.md)
 2. [Мережеві протоколи, ASP.NET Core, REST API](aspnet-core/README.md)
-3. SQL, Entity Framework Core
+3. [SQL, Entity Framework Core](ef-core/README.md)
 4. [HTML/CSS](html-css/README.md) для побудови UI додатку
 5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
 6. Функціональні компоненти React
