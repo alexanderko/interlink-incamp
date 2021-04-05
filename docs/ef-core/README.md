@@ -4,7 +4,7 @@ title: SQL, Entity Framework Core
 ---
 
 1. [Основы SQL](01-sql.md)
-2. Подключение c использованием `DbConnection`
+2. [Подключение к БД в коде](02-db-connection.md)
 3. CRUD для консольного TodoList
 4. Внедрение подключения к базе в ASP.NET Core
 5. Запросы с агрегацией и выборками
@@ -12,4 +12,3 @@ title: SQL, Entity Framework Core
    1. Модели
    2. Миграции
    3. API запросов
-

@@ -61,6 +61,12 @@ const aspnetCore = pathPrefixer('aspnet-core/')([
   'rest-api',
 ])
 
+const efCore = dir('ef-core', [
+  'intro',
+  'sql',
+  'db-connection',
+]);
+
 const htmlCss = [
   'html-css/intro',
   {
@@ -160,6 +166,7 @@ const coursePlan = {
   java,
   csharp,
   aspnetCore,
+  efCore,
   htmlCss,
   javascript,
   angular,
@@ -183,6 +190,10 @@ module.exports = {
       {
         type: 'ref',
         id: 'aspnet-core/intro',
+      },
+      {
+        type: 'ref',
+        id: 'ef-core/intro',
       },
     ]),
     category('Front-end', [
@@ -218,6 +229,7 @@ module.exports = {
   java,
   csharp,
   aspnetCore,
+  efCore,
   htmlCss,
   javascript,
   angular,
@@ -245,4 +257,8 @@ function pathPrefixer(prefix) {
   }
 
   return prependPrefix;
+}
+
+function dir(name, items) {
+  return pathPrefixer(name + '/')(items);
 }

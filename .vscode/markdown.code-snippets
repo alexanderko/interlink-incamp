@@ -17,6 +17,18 @@
 	// 	"description": "Log output to console"
 	// }
 
+	"Sidebar Week Item": {
+		"scope": "javascript",
+		"prefix": "sb-week-item",
+		"body": [
+			"const $1 = dir('$1', [",
+			"  'intro',",
+			"  '$2',$0",
+			"]);"
+		],
+		"description": "One week sidebar"
+	},
+
 	"Front Matter": {
 		"scope": "markdown",
 		"prefix": "--fm",
@@ -43,28 +55,33 @@
 		"description": "Insert Front Matter for task document"
 	}, 
 
-
-	"Checklist with import" : {
-		"scope": "markdown",
-		"prefix": "chei",
+	"Front Matter - Sidebar label": {
+		"scope": "yaml",
+		"prefix": "--side",
 		"body": [
-			"import Checklist from '@site/src/components/Checklist'",
-			"<Checklist>",
-			"* $1",
-			"</Checklist>",
-			"$0"
+			"sidebar_label: $0"
 		],
-		"description": "Insert Checklist with import"
+		"description": "Insert Front Matter Sidebar label"
 	},
+
+	"Course Task": {
+		"scope": "markdown",
+		"prefix": "md-task",
+		"body": [
+			"## 💻 $1",
+			"$2",
+			"- [ ] $0"
+		],
+		"description": "Insert Front Matter for task document"
+	}, 
 
 	"Checklist" : {
 		"scope": "markdown",
-		"prefix": "che",
+		"prefix": "md-checklist",
 		"body": [
-			"<Checklist>",
-			"* $1",
-			"</Checklist>",
-			"$0"
+			"- [ ] ${1:First}",
+			"- [ ] ${2:Second}",
+			"- [ ] ${3:Third}",
 		],
 		"description": "Insert Checklist"
 	}
