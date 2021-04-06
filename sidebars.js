@@ -65,6 +65,11 @@ const efCore = dir('ef-core', [
   'intro',
   'sql',
   'db-connection',
+  category('Entity Framework Core', [
+    'ef-core',
+    'ef-with-aspnet',
+    'migrations',
+  ])
 ]);
 
 const htmlCss = [
