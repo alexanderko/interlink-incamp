@@ -68,6 +68,7 @@ const efCore = dir('ef-core', [
   category('Entity Framework Core', [
     'ef-core',
     'ef-with-aspnet',
+    'aggregations',
   ])
 ]);
 
