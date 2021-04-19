@@ -21,7 +21,7 @@ title: План інтернатури
 3. [SQL, Entity Framework Core](ef-core/README.md)
 4. [HTML/CSS](html-css/README.md) для побудови UI додатку
 5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
-6. Функціональні компоненти React
+6. [Функціональні компоненти React](react/README.md)
 
 ## Модуль 2. Процеси, практики та командна робота
 

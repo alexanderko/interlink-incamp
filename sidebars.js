@@ -136,6 +136,14 @@ const javascript = pathPrefixer('javascript/')([
   'reactive-programming',
 ]);
 
+const react = dir('react', [
+  'intro',
+  'react-like-dom',
+  'react-app',
+  'hooks',
+  'redux',
+])
+
 const angular = pathPrefixer('angular/')([
   'intro',
   'interpolation',
@@ -174,6 +182,7 @@ const coursePlan = {
   efCore,
   htmlCss,
   javascript,
+  react,
   angular,
   microProject,
   agile,
@@ -212,6 +221,10 @@ module.exports = {
       },
       {
         type: 'ref',
+        id: 'react/intro'
+      },
+      {
+        type: 'ref',
         id: 'angular/intro'
       },
     ]),
@@ -237,6 +250,7 @@ module.exports = {
   efCore,
   htmlCss,
   javascript,
+  react,
   angular,
   microProject,
   agile,

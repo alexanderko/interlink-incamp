@@ -37,5 +37,6 @@ function createContact(contact) {
     .then(response => response.json())
 }
 // highlight-end
-
 ```
+
+[Полный диф](https://github.com/alexanderko/js-lectures/commit/a0947c8c6d52234ee638feae6eb6800ef26b21b5)
