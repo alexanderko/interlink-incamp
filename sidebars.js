@@ -141,6 +141,7 @@ const react = dir('react', [
   'react-like-dom',
   'react-app',
   'hooks',
+  'routing',
   'redux',
 ])
 
