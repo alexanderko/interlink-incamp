@@ -24,11 +24,18 @@ let state = {
         lists: [
             {id: 42, name: 'inCamp'}
         ],
-        openedTasks: { 42: 1 }
+        openedTasks: { 
+            42: 1,
+            43: 1
+        }
     },
     tasks: {
         42: [ 
             { id: 421, name: 'Learn Redux', done: false }
+        ],
+        43: [
+            {id: 531, name: 'Learn React', done: true},
+            {id: 532, name: 'Learn redux thunk', done: false}
         ]
     }
 };
