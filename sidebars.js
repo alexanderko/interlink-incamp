@@ -50,7 +50,9 @@ const csharp = pathPrefixer('csharp/')([
 const node = pathPrefixer('node/')([
   'intro',
   'overview',
-  'basics'
+  'basics',
+  'object',
+  'array',
 ])
 
 const aspnetCore = pathPrefixer('aspnet-core/')([
