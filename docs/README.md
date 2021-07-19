@@ -23,6 +23,15 @@ title: План інтернатури
 5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
 6. [Функціональні компоненти React](react/README.md)
 
+### Стек: Node.js, Express, React
+
+1. [Node.js](node/README.md)
+2. Мережеві протоколи, Express, REST API
+3. SQL, Sequelize ORM
+4. [HTML/CSS](html-css/README.md) для побудови UI додатку
+5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
+6. [Функціональні компоненти React](react/README.md)
+
 ## Модуль 2. Процеси, практики та командна робота
 
 1. [Індивідуальний мікро-проект](micro-project/README.md)

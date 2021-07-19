@@ -83,6 +83,10 @@ module.exports = {
               label: '.NET Core, C#',
               to: 'docs/csharp/intro',
             },
+            {
+              label: 'Node.js',
+              to: 'docs/node/intro',
+            },
           ],
         },
         {
