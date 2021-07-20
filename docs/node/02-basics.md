@@ -58,6 +58,9 @@ https://youtu.be/z1M17uH_9jI
 </html>
 ```
 
+## var vs let vs const
+
+https://www.youtube.com/watch?v=ayt1rzJKaPc&list=PLNih7cQiUOFvHUs2RAw1CpP3SEBYS41og&index=2&t=4217s
 
 ## Branches and loops
 

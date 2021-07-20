@@ -53,6 +53,7 @@ const node = pathPrefixer('node/')([
   'basics',
   'object',
   'array',
+  'map',
 ])
 
 const aspnetCore = pathPrefixer('aspnet-core/')([
