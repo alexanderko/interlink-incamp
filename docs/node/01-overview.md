@@ -12,7 +12,11 @@ Node.js середовище виконання JavaScript на сервері.
 * асинхронна та керована подіями
 * для автоматизації розробки для сборки фронтенду, створення Server-side та Desktop ([Electron](https://www.electronjs.org/)) додатків
 
-[Introduction](https://nodejs.org/en/about/)
+**[Introduction and a lot more!](https://nodejs.dev/learn)**
+
+:::tip Туториалы
+Обязательно перейдите по [ссылке](https://nodejs.dev/learn) выше - там много полезных туториалов, которые помогут в выполнении последующих задач. 
+:::
 
 ## Environment setup
 
