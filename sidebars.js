@@ -55,6 +55,7 @@ const node = pathPrefixer('node/')([
   'unit-tests',
   'array',
   'map',
+  'async-io',
 ])
 
 const aspnetCore = pathPrefixer('aspnet-core/')([
