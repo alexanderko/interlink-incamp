@@ -26,7 +26,7 @@ title: План інтернатури
 ### Стек: Node.js, Express, React
 
 1. [Node.js](node/README.md)
-2. Мережеві протоколи, Express, REST API
+2. [Мережеві протоколи, Express, REST API](express/README.md)
 3. SQL, Sequelize ORM
 4. [HTML/CSS](html-css/README.md) для побудови UI додатку
 5. [Сучасний JavaScript та робота з DOM](javascript/README.md)
