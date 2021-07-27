@@ -10,6 +10,7 @@ title: Express
    - [Сетевая консольная игра](01.3-net-console-game.md)
 2. [HTTP протокол](02-http.md)
    - [Простой HTTP сервер](02.1-http-endpoints.md)
-3. Express и [MVC](03-mvc.md)
-   - Контролер для [методов GET и POST](03.2-get-post-actions-task.md)
+3. [Express intro](03-express-intro.md)
+   - API для списка задач
+4. [MVC](04-mvc.md) и Router
 5. [REST API](05-rest-api.md)
