@@ -12,5 +12,5 @@ title: Express
    - [Простой HTTP сервер](02.1-http-endpoints.md)
 3. [Express intro](03-express-intro.md)
    - API для списка задач
-4. [MVC](04-mvc.md) и Router
+4. [MVC](04-mvc.md), Router и [структура приложения](04-app-structure.md)
 5. [REST API](05-rest-api.md)

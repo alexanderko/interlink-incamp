@@ -25,9 +25,11 @@
         "Сhrome",
         "комитить",
         "коммите",
+        "скринкасты",
         "скріпта",
         "скріпти",
         "фичи"
     ],
-    "editor.renderWhitespace": "trailing"
+    "editor.renderWhitespace": "trailing",
+    "files.autoSaveDelay": 2000
 }
