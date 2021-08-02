@@ -71,6 +71,14 @@ const express = pathPrefixer('express/')([
   'rest-api',
 ])
 
+const nodeSql = dir('node-sql', [
+  'week-plan',
+  'sql',
+  'connection',
+  'aggregations',
+  'orm',
+])
+
 const aspnetCore = pathPrefixer('aspnet-core/')([
   'intro',
   'net-protocols',
@@ -208,6 +216,7 @@ const coursePlan = {
   efCore,
   htmlCss,
   node,
+  nodeSql,
   express,
   javascript,
   react,
@@ -246,6 +255,10 @@ module.exports = {
       {
         type: 'ref',
         id: 'express/intro',
+      },
+      {
+        type: 'ref',
+        id: 'node-sql/week-plan',
       },
     ]),
     category('Front-end', [
@@ -289,6 +302,7 @@ module.exports = {
   efCore,
   node,
   express,
+  nodeSql,
   htmlCss,  
   javascript,
   react,
