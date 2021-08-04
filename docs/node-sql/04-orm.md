@@ -3,10 +3,19 @@ id: orm
 title: ORM
 ---
 
-https://typeorm.io/#/
-https://sequelize.org/master/manual/model-basics.html
-https://www.prisma.io/docs/concepts/overview/what-is-prisma
-https://www.prisma.io/dataguide/database-tools/top-nodejs-orms-query-builders-and-database-libraries
+ORM (Object Relational Mapping) - подход (библиотека, фреймворк), позволяющий абстрагироваться от деталей использования SQL и  работать с БД как с коллекцией объектов, с их свойствами и связями. ORM фреймворки предоставляют возможности делать CRUD операции над моделью в вызов одного метода. Для этого надо только описать соответствия полей модели к колонкам и связям в базе данных. 
+
+ORM поддерживают все необходимые типы связей между моделями и позволяют автоматически получать и сохранять связанные модели. 
+* Один к одному: `Employee -> Passport` у одного сотрудника только один паспорт. Паспорта в отдельной табличке. 
+* Один ко многим: `TodoList -> TodoItem` в одном списке много задач. Связь через поле `TodoItem.listId`
+* Много по многим: `Order -> Product` в заказе много товаров. Один товар может быть во многих заказах. Связь через промежуточную таблицу `order_products`. Каждая запись в ней содержит `orderId` и `productId`. Для одного заказа в ней будет столько записей, сколько товаров в заказе. 
+
+## Самые популярные ORM для Node.js
+
+* https://typeorm.io/#/
+* https://sequelize.org/master/manual/model-basics.html
+* https://www.prisma.io/docs/concepts/overview/what-is-prisma
+* https://www.prisma.io/dataguide/database-tools/top-nodejs-orms-query-builders-and-database-libraries
 
 ## Q: Какой ORM вы используете?
 
