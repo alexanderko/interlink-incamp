@@ -42,3 +42,26 @@ Node.js середовище виконання JavaScript на сервері.
 :::
 
 Запускаем приложение `node hello-world.js`
+
+## Using nodemon
+`nodemon` - это инструмент, который помогает разрабатывать приложения на основе node.js путем автоматического перезапуска приложения node при обнаружении изменений файлов в каталоге.
+
+**Установка / использование:**
+
+* `npm install -g nodemon` - установить глобально.
+* `npm install --save-dev nodemon` - установить как зависимость разработки.
+* `nodemon [your node app]` - пример использования: `nodemon server.js`
+
+**Исправление ошибок:**
+
+При использовании **nodemon** на ОС Linux, со временем может появиться ошибка: 
+```
+ERROR: "Internal watch failed: ENOSPC: System limit for number of file watchers reached, watch..."
+```
+Она возникает когда ваш проект достигает лимита файловых наблюдателей вашей системы.
+
+Для исправления данной проблемы выполните следующие команды:
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+sudo sysctl --system
+```
