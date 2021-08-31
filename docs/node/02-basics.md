@@ -62,6 +62,10 @@ https://youtu.be/z1M17uH_9jI
 
 https://www.youtube.com/watch?v=ayt1rzJKaPc&list=PLNih7cQiUOFvHUs2RAw1CpP3SEBYS41og&index=2&t=4217s
 
+## Debugging 
+
+https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
 ## Branches and loops
 
 - [ ] 💻 Функция плюаризации слова. Сделать для всех случаев: 0, 2-4, 5-10, 11-19, 20-99, 100 и больше
