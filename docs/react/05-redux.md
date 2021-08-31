@@ -95,7 +95,7 @@ export default store
 
 ## Асинхронные actions
 
-Редьюсеры по своей природе синхронные функции без побочных эффектов. В чистом redux action - это объект с  полем `type` и другими полями с данными. Для выполнения асинхронных действий используется библиотека redux-thunk. Она добавляет в store промежуточный слой (middleware) для перехвата действий типа `Function`. Если в store в отправить не объект а функцию, то ее перехватит redux-thunk и вызовет, передав ссылку на функцию dispatch уже следующего middleware (или чистого store, если других middleware нет). 
+Редьюсеры по своей природе синхронные функции без побочных эффектов. В чистом redux action - это объект с  полем `type` и другими полями с данными. Для выполнения асинхронных действий используется библиотека [redux-thunk](https://github.com/reduxjs/redux-thunk). Она добавляет в store промежуточный слой (middleware) для перехвата действий типа `Function`. Если в store в отправить не объект а функцию, то ее перехватит redux-thunk и вызовет, передав ссылку на функцию dispatch уже следующего middleware (или чистого store, если других middleware нет). 
 
 Вот как может выглядеть действие загрузки дeшборда. 
 
@@ -112,6 +112,44 @@ export const loadDashboard = dispatch => {
 ```
 
 В примере выше мы используем принятое в redux свойство `payload` для обозначения полезной нагрузки (данных) действия. Свойство это может называться и иначе и быть не единственным свойством с данными. Тут уже как решат разработчики в команде.
+
+### Подключение redux-thunk
+
+Что бы redux начал "понимать" action-ы с типом Function, thunk middleware необходимо внедрить в store.
+
+```javascript {1-2,12} title="store/index.js"
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+
+import dashboardReducer from './dashboard/reducer'
+import tasksReducer from './tasks/reducer'
+
+export const rootReducer = combineReducers({
+    dashboard: dashboardReducer,
+    tasks: tasksReducer
+})
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+export default store
+```
+
+### middleware + Redux DevTool 
+
+При использовании сразу нескольких расширений store (middleware, Redux DevTool) код будет немного сложнее. 
+
+```javascript {1,4,5} title="store/index.js"
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(rootReducer, composeEnhancers(
+    applyMiddleware(thunk)
+));
+```
+
+:::note Redux DevTool
+Описание разных вариантов подключения Redux DevTool по ссылке https://github.com/zalmoxisus/redux-devtools-extension#12-advanced-store-setup
+:::
 
 ### Действия с параметрами
 
