@@ -48,12 +48,12 @@ grant all privileges on database <database_name> to <username>;
 
 Подключаемся новым пользователем:
 ```bash
-postgres -h 127.0.0.1 <database_name> <username>
+psql -h 127.0.0.1 <database_name> <username>
 ```
 
 Не забываем заменить имя пользователя и базы. К примеру, у вас получиться:
 ```bash
-postgres -h 127.0.0.1 todolist todolist_app
+psql -h 127.0.0.1 todolist todolist_app
 ```
 
 :::caution
