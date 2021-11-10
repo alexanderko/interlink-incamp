@@ -114,6 +114,7 @@ const htmlCss = [
       'html-css/html-tags',
       'html-css/css-intro',
       'html-css/css-properties',
+      'html-css/css-priority',
       'html-css/typography',
       'html-css/task-cv'
     ]
