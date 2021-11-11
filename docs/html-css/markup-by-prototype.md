@@ -3,6 +3,10 @@ title: Верстка по макету
 sidebar_label: 💻 Верстка по макету
 ---
 
+* Знакомимся с Viewport
+  * [Краткое описание Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp). 
+  * [Развернутое пояснение](https://itchief.ru/html-and-css/viewport-meta-tag) на примере iPhone3 и iPhone4
+  * Узнать размер viewport вашего экрана поможет [тестовая страница](https://whatismyviewport.com/)
 * Знакомимся с [Media Query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 * Смотрим [Как пользоваться инспектором в Figma](https://youtu.be/lwSWZhoGUsU)
 * Пересматриваем [Возможности Developer Tools в Сhrome по работе с CSS](https://developers.google.com/web/tools/chrome-devtools/css/) (или FF, если его используете)
