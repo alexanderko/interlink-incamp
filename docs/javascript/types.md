@@ -55,3 +55,5 @@ https://youtu.be/z1M17uH_9jI
 </body>
 </html>
 ```
+
+[Змінні та типи](https://youtu.be/ayt1rzJKaPc)
