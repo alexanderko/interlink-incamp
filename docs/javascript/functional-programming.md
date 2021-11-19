@@ -6,6 +6,10 @@ title: Функциональное программирование
 
 https://youtu.be/znMJEccsPEQ
 
+[Работа с массивами без циклов. Часть 1](https://youtu.be/A_hLY1Zk4LQ)
+
+[Работа с массивами без циклов. Часть 2](https://youtu.be/zSOZlnNqSrg)
+
 ## :computer: Задание 
 
 Написать функции высшего порядка для:

@@ -40,3 +40,7 @@ function createContact(contact) {
 ```
 
 [Полный диф](https://github.com/alexanderko/js-lectures/commit/a0947c8c6d52234ee638feae6eb6800ef26b21b5)
+
+## Promise и Async/Await
+
+[Promise и Async/Await](https://youtu.be/KFpUbJk1GuY)

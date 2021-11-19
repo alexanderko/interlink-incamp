@@ -151,6 +151,7 @@ const htmlCss = [
 const javascript = pathPrefixer('javascript/')([
   'intro',
   'types',
+  'concise-code',
   'inner-html',
   'task-01--todo-list-item-html',
   category('Обработка событий DOM', [
