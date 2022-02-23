@@ -1,214 +1,215 @@
-const java = pathPrefixer('java/')([
-  'intro',
-  category('Intro', pathPrefixer('intro/')([
-    'java-versions-overview',
-    'openjdk-11-install',
-    'install-idea',
-    'create-console-app',
-    'compile-and-run-from-console',
-    'method-main',
-    'keywords',
-    'one-parameter-function',
-    'variables',
-    'jshell-java-repl',
-    'whole-numbers',
-    'compare-whole-numbers',
-    'function-with-return',
-    'logical-operators',
-    'conditional-statements',
-    'ternary-operator',
-    'for-loop',
-  ]), {collapsed: true}),
-  'tic-tac-toe',
-  category('ООП', pathPrefixer('oop/')([
-    'structures',
-    'business-types',
-    'methods',
-    'encapsulation',
-  ])),
-  'generics',
-])
+const java = pathPrefixer("java/")([
+  "intro",
+  category(
+    "Intro",
+    pathPrefixer("intro/")([
+      "java-versions-overview",
+      "openjdk-11-install",
+      "install-idea",
+      "create-console-app",
+      "compile-and-run-from-console",
+      "method-main",
+      "keywords",
+      "one-parameter-function",
+      "variables",
+      "jshell-java-repl",
+      "whole-numbers",
+      "compare-whole-numbers",
+      "function-with-return",
+      "logical-operators",
+      "conditional-statements",
+      "ternary-operator",
+      "for-loop",
+    ]),
+    { collapsed: true }
+  ),
+  "tic-tac-toe",
+  category(
+    "ООП",
+    pathPrefixer("oop/")([
+      "structures",
+      "business-types",
+      "methods",
+      "encapsulation",
+    ])
+  ),
+  "generics",
+]);
 
-const csharp = pathPrefixer('csharp/')([
-  'intro',
-  'dotnet-overview',
-  'basics',
-  'tic-tac-toe',
-  category('ООП', [
-    'oop',
-    'methods',
-    'inheritance',
+const csharp = pathPrefixer("csharp/")([
+  "intro",
+  "dotnet-overview",
+  "basics",
+  "tic-tac-toe",
+  category("ООП", ["oop", "methods", "inheritance"]),
+  "collections",
+  category("Проектирование взаимодействия", [
+    "interaction",
+    "students-task",
+    "silpo-bonus-task",
   ]),
-  'collections',
-  category('Проектирование взаимодействия', [
-    'interaction',
-    'students-task',
-    'silpo-bonus-task',
-  ])
-])
+]);
 
-const node = pathPrefixer('node/')([
-  'intro',
-  'overview',
-  'basics',  
-  'object',
-  'unit-tests',
-  'array',
-  'map',
-  'async-io',
-])
+const node = pathPrefixer("node/")([
+  "intro",
+  "overview",
+  "basics",
+  "object",
+  "unit-tests",
+  "array",
+  "map",
+  "async-io",
+]);
 
-const express = pathPrefixer('express/')([
-  'intro',
-  'net-protocols',
-  'net-server',
-  'net-console-game',
-  'http',
-  'http-server',
-  'express-intro',
-  'mvc',
-  'app-structure',
-  'rest-api',
-])
+const express = pathPrefixer("express/")([
+  "intro",
+  "net-protocols",
+  "net-server",
+  "net-console-game",
+  "http",
+  "http-server",
+  "express-intro",
+  "mvc",
+  "app-structure",
+  "rest-api",
+]);
 
-const nodeSql = dir('node-sql', [
-  'week-plan',
-  'sql',
-  'connection',
-  'aggregations',
-  'orm',
-])
+const nodeSql = dir("node-sql", [
+  "week-plan",
+  "sql",
+  "connection",
+  "aggregations",
+  "orm",
+]);
 
-const aspnetCore = pathPrefixer('aspnet-core/')([
-  'intro',
-  'net-protocols',
-  'tcp-listener',
-  'net-console-game',
-  'http',
-  'http-endpoints',
-  'mvc',
-  'controller',
-  'get-post-actions-tasks',
-  'services-di',
-  'rest-api',
-])
+const aspnetCore = pathPrefixer("aspnet-core/")([
+  "intro",
+  "net-protocols",
+  "tcp-listener",
+  "net-console-game",
+  "http",
+  "http-endpoints",
+  "mvc",
+  "controller",
+  "get-post-actions-tasks",
+  "services-di",
+  "rest-api",
+]);
 
-const efCore = dir('ef-core', [
-  'intro',
-  'sql',
-  'db-connection',
-  category('Entity Framework Core', [
-    'ef-core',
-    'ef-with-aspnet',
-    'aggregations',
-  ])
+const efCore = dir("ef-core", [
+  "intro",
+  "sql",
+  "db-connection",
+  category("Entity Framework Core", [
+    "ef-core",
+    "ef-with-aspnet",
+    "aggregations",
+  ]),
 ]);
 
 const htmlCss = [
-  'html-css/intro',
+  "html-css/intro",
   {
-    type: 'category',
-    label: 'Основи',
+    type: "category",
+    label: "Основи",
     collapsed: false,
     items: [
-      'html-css/html-tags',
-      'html-css/css-intro',
-      'html-css/css-properties',
-      'html-css/css-priority',
-      'html-css/typography',
-      'html-css/task-cv'
-    ]
+      "html-css/html-tags",
+      "html-css/css-intro",
+      "html-css/css-properties",
+      "html-css/css-priority",
+      "html-css/typography",
+      "html-css/task-cv",
+    ],
   },
   {
-    type: 'category',
-    label: 'Box Model and Flow',
+    type: "category",
+    label: "Box Model and Flow",
     collapsed: false,
     items: [
-      'html-css/box-model',
-      'html-css/size-units',
-      'html-css/flow',
-      'html-css/task-cv-styles',
-    ]
+      "html-css/box-model",
+      "html-css/size-units",
+      "html-css/flow",
+      "html-css/task-cv-styles",
+    ],
   },
   {
-    type: 'category',
-    label: 'Layout',
+    type: "category",
+    label: "Layout",
     collapsed: false,
     items: [
-      'html-css/layout',
-      'html-css/flexbox',
-      'html-css/semantic-markup',
-      'html-css/task-layout',
-    ]
+      "html-css/layout",
+      "html-css/flexbox",
+      "html-css/semantic-markup",
+      "html-css/task-layout",
+    ],
   },
-  'html-css/markup-by-prototype',
-  'html-css/css-methodologies',
-  'html-css/css-processors',
-  'html-css/style-guide',
-  'html-css/animation'
+  "html-css/markup-by-prototype",
+  "html-css/css-methodologies",
+  "html-css/css-processors",
+  "html-css/style-guide",
+  "html-css/animation",
 ];
 
-const javascript = pathPrefixer('javascript/')([
-  'intro',
-  'types',
-  'concise-code',
-  'inner-html',
-  'task-01--todo-list-item-html',
-  category('Обработка событий DOM', [
-    'dom-event-handling',
-    'task-02--todo-list-events',
+const javascript = pathPrefixer("javascript/")([
+  "intro",
+  "types",
+  "concise-code",
+  "inner-html",
+  "task-01--todo-list-item-html",
+  category("Обработка событий DOM", [
+    "dom-event-handling",
+    "task-02--todo-list-events",
   ]),
-  category('Обработка отправки формы', [
-    'submitting-html-form',
-    'task-03--todo-list-form',
+  category("Обработка отправки формы", [
+    "submitting-html-form",
+    "task-03--todo-list-form",
   ]),
-  category('Fetch API', [
-    'fetch-api',
-    'task-04--use-fetch-api',
-  ]),
-  'functional-programming',
-  'reactive-programming',
+  category("Fetch API", ["fetch-api", "task-04--use-fetch-api"]),
+  "functional-programming",
+  "reactive-programming",
 ]);
 
-const react = dir('react', [
-  'intro',
-  'react-like-dom',
-  'react-app',
-  'hooks',
-  'todo-list-components',
-  'routing',
-  'redux',
-])
+const react = dir("react", [
+  "intro",
+  "react-like-dom",
+  "react-app",
+  "hooks",
+  "todo-list-components",
+  "axios",
+  "routing",
+  "redux",
+]);
 
-const angular = pathPrefixer('angular/')([
-  'intro',
-  'interpolation',
-  'data-binding',
-  'bootstrap-and-sass',
-  'components',
-  'task-01--todo-list',
-  'task-02--http',
-  'task-03--routing',
-])
+const angular = pathPrefixer("angular/")([
+  "intro",
+  "interpolation",
+  "data-binding",
+  "bootstrap-and-sass",
+  "components",
+  "task-01--todo-list",
+  "task-02--http",
+  "task-03--routing",
+]);
 
-const microProject = pathPrefixer('micro-project/')([
-  'intro',
-  'project-domains',
-  'execution-flow',
-])
+const microProject = pathPrefixer("micro-project/")([
+  "intro",
+  "project-domains",
+  "execution-flow",
+]);
 
-const agile = pathPrefixer('agile/')([
-  'intro',
-  'project-planning',
-  'user-story-discussion',
-  'user-stories-invest',
-  'estimation',
-  'demo',
-])
+const agile = pathPrefixer("agile/")([
+  "intro",
+  "project-planning",
+  "user-story-discussion",
+  "user-stories-invest",
+  "estimation",
+  "demo",
+]);
 
 const coursePlan = {
-  type: 'ref', 
-  id: 'course'
+  type: "ref",
+  id: "course",
 };
 
 [
@@ -225,78 +226,73 @@ const coursePlan = {
   angular,
   microProject,
   agile,
-].forEach(sidebar => sidebar.unshift(coursePlan));
+].forEach((sidebar) => sidebar.unshift(coursePlan));
 
 module.exports = {
   main: [
     coursePlan.id,
-    'how-to-complete',
+    "how-to-complete",
     {
-      type: 'ref',
-      id: 'java/intro',
+      type: "ref",
+      id: "java/intro",
     },
-    category('.NET',[
+    category(".NET", [
       {
-        type: 'ref',
-        id: 'csharp/intro',
+        type: "ref",
+        id: "csharp/intro",
       },
       {
-        type: 'ref',
-        id: 'aspnet-core/intro',
+        type: "ref",
+        id: "aspnet-core/intro",
       },
       {
-        type: 'ref',
-        id: 'ef-core/intro',
-      },
-    ]),
-    category('Node.js',[
-      {
-        type: 'ref',
-        id: 'node/intro',
-      },
-      {
-        type: 'ref',
-        id: 'express/intro',
-      },
-      {
-        type: 'ref',
-        id: 'node-sql/week-plan',
+        type: "ref",
+        id: "ef-core/intro",
       },
     ]),
-    category('Front-end', [
+    category("Node.js", [
       {
-        type: 'ref',
-        id: 'html-css/intro',
+        type: "ref",
+        id: "node/intro",
       },
       {
-        type: 'ref',
-        id: 'javascript/intro'
+        type: "ref",
+        id: "express/intro",
       },
       {
-        type: 'ref',
-        id: 'react/intro'
-      },
-      {
-        type: 'ref',
-        id: 'angular/intro'
+        type: "ref",
+        id: "node-sql/week-plan",
       },
     ]),
-    category('Процессы и практики', [
+    category("Front-end", [
       {
-        type: 'ref',
-        id: 'micro-project/intro'
+        type: "ref",
+        id: "html-css/intro",
       },
       {
-        type: 'ref',
-        id: 'agile/intro'
+        type: "ref",
+        id: "javascript/intro",
+      },
+      {
+        type: "ref",
+        id: "react/intro",
+      },
+      {
+        type: "ref",
+        id: "angular/intro",
       },
     ]),
-    category('Общие темы', [
-      'git',
-      'terminal',
-      'data-structures',
-      'tdd',
+    category("Процессы и практики", [
+      {
+        type: "ref",
+        id: "micro-project/intro",
+      },
+      {
+        type: "ref",
+        id: "agile/intro",
+      },
     ]),
+    category("Общие темы", ["git", "terminal", "data-structures", "tdd"]),
   ],
   java,
   csharp,
@@ -305,30 +301,31 @@ module.exports = {
   node,
   express,
   nodeSql,
-  htmlCss,  
+  htmlCss,
   javascript,
   react,
   angular,
   microProject,
   agile,
-}
+};
 
-function category(label, items, options = {collapsed: false}) {
+function category(label, items, options = { collapsed: false }) {
   return {
-    type: 'category',
+    type: "category",
     collapsed: false,
     label,
     items,
-    ...options
+    ...options,
   };
 }
 
 function pathPrefixer(prefix) {
-  function prependPrefix (item) {
-    if (typeof item == 'string') return prefix + item;
-    if (Array.isArray(item)) return item.map(prependPrefix)
+  function prependPrefix(item) {
+    if (typeof item == "string") return prefix + item;
+    if (Array.isArray(item)) return item.map(prependPrefix);
     switch (item.type) {
-      case 'category': return {...item, items: prependPrefix(item.items)}
+      case "category":
+        return { ...item, items: prependPrefix(item.items) };
     }
   }
 
@@ -336,5 +333,5 @@ function pathPrefixer(prefix) {
 }
 
 function dir(name, items) {
-  return pathPrefixer(name + '/')(items);
+  return pathPrefixer(name + "/")(items);
 }
