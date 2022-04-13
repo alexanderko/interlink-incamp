@@ -1,6 +1,6 @@
 ---
 title: История платформ размещения курса
-author: Александр Котов
+author: Олександр Котов
 author_image_url: https://www.gravatar.com/avatar/e9c367f77a2a1288d5a9073978b50171?s=50
 tags: [course-tools]
 ---
