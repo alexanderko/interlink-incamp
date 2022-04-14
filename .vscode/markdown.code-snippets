@@ -84,6 +84,40 @@
 			"- [ ] ${3:Third}",
 		],
 		"description": "Insert Checklist"
+	},
+
+	"Task description" : {
+		"scope": "markdown",
+		"prefix": "io",
+		"body": [
+			"### ${1: Вивести }",
+			"Написати функцію $0",
+			"",
+			"#### Вимоги",
+			"* ",
+			"",
+			"#### Початкова реалізація",
+			"```javascript",
+			"function ${2:calc}() {",
+			"    let result = '';",
+			"    return result;",
+			"}",
+			"```",
+			"",
+			"#### Виклик функції",
+			"```javascript",
+			"console.log(${2}())",
+			"```",
+			"",
+			"#### Результат",
+			"```",
+			"",
+			"```",
+			"",
+			"#### Підказки",
+			"* "
+		],
+		"description": "Insert complete task description"
 	}
 
 }
