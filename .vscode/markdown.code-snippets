@@ -1,5 +1,5 @@
 {
-	// https://code.visualstudio.com/docs/editor/userdefinedsnippets
+	// https://code.visualstudio.com/docs/edit/userdefinedsnippets
 	// Place your inCamp workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
@@ -84,6 +84,30 @@
 			"- [ ] ${3:Third}",
 		],
 		"description": "Insert Checklist"
+	},
+
+	"Заголовок 1": {
+		"scope": "markdown",
+		"prefix": "з1",
+		"body": "# $0"
+	},
+
+	"Заголовок 2": {
+		"scope": "markdown",
+		"prefix": "з2",
+		"body": "## $0"
+	},
+
+	"Заголовок 3": {
+		"scope": "markdown",
+		"prefix": "з3",
+		"body": "### $0"
+	},
+
+	"Заголовок 4": {
+		"scope": "markdown",
+		"prefix": "з4",
+		"body": "#### $0"
 	},
 
 	"Task description" : {
