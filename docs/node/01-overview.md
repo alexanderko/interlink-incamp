@@ -22,6 +22,8 @@ Node.js середовище виконання JavaScript на сервері.
 
 ### Install
 
+https://youtu.be/wVRxKudKi3g
+
 1. Звантажити дистрибутив для вашої ОС за посиланням [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 2. Запустити інсталлер 
 3. Проклікати кнопку **Continue**
@@ -42,6 +44,10 @@ Node.js середовище виконання JavaScript на сервері.
 :::
 
 Запускаем приложение `node hello-world.js`
+
+## VSCode
+
+https://youtu.be/z1yiMy7-qo0
 
 ## Using nodemon
 `nodemon` - это инструмент, который помогает разрабатывать приложения на основе node.js путем автоматического перезапуска приложения node при обнаружении изменений файлов в каталоге.
